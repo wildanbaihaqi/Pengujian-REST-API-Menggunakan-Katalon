@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01-Validation Response And Verify JSON Value</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>afccc03d-1971-477b-ac83-ab4519938978</testCaseGuid>
+</TestCaseEntity>
