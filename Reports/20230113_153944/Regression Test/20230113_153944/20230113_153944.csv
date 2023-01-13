@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Regression Test,,,,2023-01-13 15:39:49,2023-01-13 15:40:02,"13,133s",PASSED
+,,,,,,,
+Test Cases/TC01-Validation Response And Verify JSON Value,,,,2023-01-13 15:39:49,2023-01-13 15:39:56,"6,487s",PASSED
+"sendRequest(findTestObject(""GET/Get List User""))",,Mengirim request,,2023-01-13 15:39:50,2023-01-13 15:39:54,"3,962s",PASSED
+"response = sendRequestAndVerify(findTestObject(""GET/Get List User""))",,Mengirim request dan verifikasi response,,2023-01-13 15:39:54,2023-01-13 15:39:56,"1,533s",PASSED
+"verifyResponseStatusCode(response, 200)",,Verifikasi response status code,,2023-01-13 15:39:56,2023-01-13 15:39:56,"0,007s",PASSED
+"verifyElementsCount(response, ""data.first_name"", 6)",,Verifikasi jumlah element yang ada pada JSON,,2023-01-13 15:39:56,2023-01-13 15:39:56,"0,128s",PASSED
+"verifyElementPropertyValue(response, ""data[4].first_name"", ""Charles"")",,Verifikasi element pada JSON,,2023-01-13 15:39:56,2023-01-13 15:39:56,"0,103s",PASSED
+,,,,,,,
+Test Cases/TC02-Validation Response,,,,2023-01-13 15:39:56,2023-01-13 15:39:58,"1,779s",PASSED
+"sendRequest(findTestObject(""GET/Get Single User""))",,,,2023-01-13 15:39:56,2023-01-13 15:39:57,"0,640s",PASSED
+"response = sendRequestAndVerify(findTestObject(""GET/Get Single User""))",,,,2023-01-13 15:39:57,2023-01-13 15:39:58,"0,582s",PASSED
+"verifyResponseStatusCode(response, 200)",,,,2023-01-13 15:39:58,2023-01-13 15:39:58,"0,004s",PASSED
+,,,,,,,
+Test Cases/TC04-Validation Response Create User,,,,2023-01-13 15:39:58,2023-01-13 15:40:00,"2,175s",PASSED
+"sendRequest(findTestObject(""POST/POST Ceate User""))",,,,2023-01-13 15:39:58,2023-01-13 15:39:59,"0,605s",PASSED
+"response = sendRequestAndVerify(findTestObject(""POST/POST Ceate User""))",,,,2023-01-13 15:39:59,2023-01-13 15:40:00,"0,866s",PASSED
+"verifyResponseStatusCode(response, 201)",,,,2023-01-13 15:40:00,2023-01-13 15:40:00,"0,004s",PASSED
+,,,,,,,
+Test Cases/TC03-Validation Response Update User,,,,2023-01-13 15:40:00,2023-01-13 15:40:02,"2,100s",PASSED
+"sendRequest(findTestObject(""PUT/PUT Update""))",,,,2023-01-13 15:40:00,2023-01-13 15:40:01,"0,581s",PASSED
+"response = sendRequestAndVerify(findTestObject(""PUT/PUT Update""))",,,,2023-01-13 15:40:01,2023-01-13 15:40:02,"0,933s",PASSED
+"verifyResponseStatusCode(response, 200)",,,,2023-01-13 15:40:02,2023-01-13 15:40:02,"0,005s",PASSED
